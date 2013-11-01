@@ -21,7 +21,5 @@ $base-line-height: 24px;
 $total-columns      : 12;             // a 12-column grid
 $column-width       : 4em;            // each column is 4em wide
 $gutter-width       : 0em;            // 1em gutters between columns
-$grid-padding       : 0;  // grid-padding equal to gutters
+$grid-padding       : 0;              // grid-padding equal to gutters
 $container-style    : fluid;
-
-@import "colors";

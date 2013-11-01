@@ -1,0 +1,3 @@
+[submodule "source/stylesheets/shared"]
+	path = source/stylesheets/shared
+	url = https://github.com/rainforestapp/shared-styles.git
