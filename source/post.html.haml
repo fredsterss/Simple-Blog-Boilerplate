@@ -1,0 +1,11 @@
+//
+// Post template.
+//
+- if current_article
+  = wrap_layout :layout do
+    .post
+      %h1= current_article.title 
+      .meta
+        %span.date= current_article.metadata[:page]['date'].strftime('%A %d %b, %Y')
+        %span.author= "by " + current_article.metadata[:page]['author'].capitalize
+      = yield

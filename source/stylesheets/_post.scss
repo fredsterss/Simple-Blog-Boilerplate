@@ -1,0 +1,11 @@
+/**
+ * Post
+ * 
+ * @author Fred Stevens-Smith (@fredsters_s) while working on @RainforestQA
+ */
+.post {
+  max-width: $line_width;
+  p { @include margin-trailer(1); }
+  .meta { color: $dgrey; }
+  img { max-width: 100%; }
+}

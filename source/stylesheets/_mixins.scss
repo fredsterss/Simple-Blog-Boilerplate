@@ -1,0 +1,57 @@
+/**
+ * Mixins!
+ * Use mixins for:
+ * - abstraction, when you're repeating a lot of styling
+ * - semantification, eg. when you want to style an anchor like a button
+ * 
+ * @author Fred Stevens-Smith (@fredsters_s) while working on @RainforestQA
+ */
+
+/**
+ * Button mixin
+ * Used because I like to trick the user into thinking
+ * that anchors are actually buttons. Ha! 
+ * Makes use of:
+ * - scss default arguments ($color: $blue) 
+ * - compass tinting
+ *
+ * apply with .some-class { @include button(:some-color); }
+ * 
+ */
+@mixin button ($color: $blue) {
+  @include box-sizing('border-box');
+  @include border-radius(3px);
+  font-weight: bold;
+  margin: 0;
+  border: 1px solid tint($color, 55);
+  font-family: $font-family;
+  font-size: 16px;
+  padding: 0.5em;
+
+  background-color: tint($color, 95);
+  color: $color;
+
+  &:hover {
+    @include timing;
+    cursor: pointer;
+    background-color: $color;
+    border-color: $color;
+    color: $white;
+  }
+}
+
+@mixin timing {
+  @include transition-duration(300ms);
+  @include transition-timing-function(ease-out);
+}
+
+/* Type-specific mixins */
+@mixin margin($distance, $distance_bottom: $distance) {
+  @include margin-leader($distance);
+  @include margin-trailer($distance_bottom);
+}
+
+@mixin padding($distance, $distance_bottom: $distance) {
+  @include padding-leader($distance);
+  @include padding-trailer($distance_bottom);
+}

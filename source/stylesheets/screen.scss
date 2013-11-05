@@ -1,15 +1,27 @@
 /**
  * Fat controller.
  * 
- * @author Fred Stevens-Smith
- * @copyright Cldrdr Inc. d/b/a Rainforest, 2013
+ * @author Fred Stevens-Smith (@fredsters_s) while working on @RainforestQA
  */
 
+/* Global variables */
+$line_width: 36em;
+$font-family: 'Helvetica Neue', Helvetica, sans-serif;
+
+/* Resets */
 @import "compass";
 @import "compass/reset";
 
-/* Shared stuff! */
-@import "shared/import";
+/* Globals */
+@import "colours";
+@import "mixins";
 
 /* Layout */
-@import "shared/layouts/fluid_sidebar";
+@import "layouts/_responsive_full_width_with_sidebar";
+
+/* Site-specific */
+@import "typography";
+@import "sidebar";
+@import "main";
+@import "posts_page";
+@import "post";

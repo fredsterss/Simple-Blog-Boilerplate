@@ -1,0 +1,16 @@
+!!!
+%html
+  %head
+    %meta{charset: "utf-8"}
+    %meta{content: "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+    %meta{name: "viewport", content: "width=device-width"}
+    %link{rel: "stylesheet", type: "text/css", href: "/stylesheets/screen.css"}
+    %title
+      Middleman Blog Boilerplate
+  
+  %body
+    %section.sidebar
+      = partial "sidebar"
+
+    %section.main{role: "main"}
+      = yield

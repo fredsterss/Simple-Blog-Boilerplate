@@ -1,0 +1,24 @@
+/**
+ * Sidebar style overrides
+ * The point of this is to separate styling from layout.
+ * 
+ * @author Fred Stevens-Smith (@fredsters_s) while working on @RainforestQA
+ */
+.sidebar {
+  border-right: 1px solid $grey;
+  padding: 2em;
+
+  ul {
+    list-style: disc inside;
+    margin: 1em 0;
+    > li {
+      margin-bottom: 0.5em;
+    }
+  }
+
+  /* You can set responsive rules here too */
+  @include at-breakpoint(1 55em) {
+    border-right: none;
+    border-bottom: 1px solid $grey;
+  }
+}

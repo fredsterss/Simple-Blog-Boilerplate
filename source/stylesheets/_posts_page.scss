@@ -1,0 +1,21 @@
+/**
+ * Posts page
+ * 
+ * @author Fred Stevens-Smith (@fredsters_s) while working on @RainforestQA
+ */
+.posts {
+  max-width: $line_width;
+
+  h2 {
+    @include adjust-font-size-to(20px, 1.5, 16px);
+  }
+
+  .post-preview {
+    margin-bottom: 2em;
+  }
+}
+
+.info {
+  margin-bottom: 2em;
+  font-weight: bold;
+}
