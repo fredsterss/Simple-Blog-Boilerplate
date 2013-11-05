@@ -1,76 +1,11 @@
 /**
  * Post
  * 
- * @author Fred Stevens-Smith
- * @copyright Cldrdr Inc. d/b/a Rainforest, 2013
+ * @author Fred Stevens-Smith (@fredsters_s) while working on @RainforestQA
  */
 .post {
   max-width: $line_width;
-  
-  a {
-    color: inherit;
-    background-color: tint($blue, 92);
-  }
-
-  > p:first-of-type {
-    @include adjust-font-size-to(26px, 1.75, 18px);
-  }
-
-  p > a {
-    padding: 0.3em;
-
-    &:hover {
-      text-decoration: none;
-      @include transition-duration(200ms);
-      background-color: $blue;
-      color: $white;
-    }
-  }
-
-  a.apply-for-job {
-    display: block;
-    padding: 1em;
-  }
-
-  h1 {
-    @include adjust-font-size-to(38px, 2, 16px);
-    margin: 0;
-  }
-
-  h2 {
-    @include adjust-font-size-to(20px, 1, 16px);
-    @include margin(2, 0.5);
-    > a { background-color: inherit; }
-  }
-
-  h3 {
-    @include adjust-font-size-to(18px, 1, 16px);
-    font-weight: bold;
-    @include margin(2, 0.5);
-    > a { background-color: inherit; }    
-  }
-
-  p {
-    @include margin-trailer(1);
-  }
-
-  .meta {
-    color: $dgrey;
-    @include margin(0.5, 1);
-    font-weight: bold;
-  }
-
-  img {
-    max-width: 100%;
-    border: 1px solid shade($grey, 10);
-    margin-bottom: -1em;
-  }
-
-  ol {
-    list-style: decimal;
-    @include margin-trailer(1);
-    > li {
-      @include margin-trailer(0.5);
-    }
-  }
+  p { @include margin-trailer(1); }
+  .meta { color: $dgrey; }
+  img { max-width: 100%; }
 }

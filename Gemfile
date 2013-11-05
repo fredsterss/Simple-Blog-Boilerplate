@@ -4,8 +4,6 @@ source 'http://rubygems.org'
 
 gem "middleman", "~> 3.1.6"
 gem "middleman-blog", "~> 3.3.0"
-gem "middleman-s3_sync"
-gem "unf"
 gem "nokogiri"
 
 # Live-reloading plugin

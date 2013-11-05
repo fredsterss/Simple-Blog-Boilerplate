@@ -1,9 +1,41 @@
 /**
  * Typography
  * 
- * @author Fred Stevens-Smith
- * @copyright Cldrdr Inc. d/b/a Rainforest, 2013
+ * @author Fred Stevens-Smith (@fredsters_s) while working on @RainforestQA
  */
+/* Create a sane, standardised baseline */
+$base-font-size: 16px;
+$base-line-height: 24px;
+@include establish-baseline;
+
+body {
+  font-family: $font-family;
+  color: $black;
+}
+
 p {
   @include adjust-font-size-to(18px, 1.3, 16px);
+}
+
+h1 {
+  font-weight: bold;
+  @include adjust-font-size-to(18px, 1, 16px);
+}
+
+h2 { font-weight: bold; }
+em { font-style: italic; }
+strong { font-weight: bold; }
+
+pre {
+  background-color: $llgrey;
+  border: 1px solid $grey;
+  padding: 1em;
+
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap;
+
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  @include adjust-font-size-to(13px, 1, 15px);
 }

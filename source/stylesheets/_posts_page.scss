@@ -1,40 +1,21 @@
 /**
  * Posts page
  * 
- * @author Fred Stevens-Smith
- * @copyright Cldrdr Inc. d/b/a Rainforest, 2013
+ * @author Fred Stevens-Smith (@fredsters_s) while working on @RainforestQA
  */
 .posts {
   max-width: $line_width;
 
+  h2 {
+    @include adjust-font-size-to(20px, 1.5, 16px);
+  }
+
   .post-preview {
-    margin-bottom: 5em;
-    
-    h2 {
-      @include adjust-font-size-to(22px, 1.5, 16px);
-      @include margin(0);
-      span {
-        margin-left: 0.2em;
-      }
-    }
-
-    a { color: inherit; }
-    p > a {
-      color: $blue;
-      padding: 0.3em;
-      
-      &:hover {
-        text-decoration: none;
-        @include transition-duration(200ms);
-        background-color: $blue;
-        color: $white;
-      }
-    }
+    margin-bottom: 2em;
   }
+}
 
-  @include at-breakpoint(1 55em) {
-    .post-preview {
-      margin-bottom: 3em;
-    }
-  }
+.info {
+  margin-bottom: 2em;
+  font-weight: bold;
 }

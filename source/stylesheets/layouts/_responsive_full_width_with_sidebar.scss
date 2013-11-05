@@ -1,0 +1,77 @@
+/**
+ * Responsive full-width layout with sidebar.
+ * requires: sass, compass, susy
+ * markup: 
+ *   body
+ *     .sidebar
+ *     .main
+ * 
+ * @author Fred Stevens-Smith (@fredsters_s) while working on @RainforestQA
+ */
+@import "susy";
+
+/* Full width grid */
+$total-columns      : 12;             // a 12-column grid
+$column-width       : 4em;            // each column is 4em wide
+$gutter-width       : 0em;            // 1em gutters between columns
+$grid-padding       : 0;              // grid-padding equal to gutters
+$container-style    : fluid;
+
+body { @include container; }
+
+/* For both */
+.sidebar,
+.main {
+  @include box-sizing('border-box');
+}
+
+/**
+ * Sidebar
+ * 
+ * WHY IS IT FIXED you ask?
+ * Well, if you asked a bit nicer I'd explain that the sidebar
+ * is position: fixed because it needs to be full height 
+ * regardless of content.
+ */
+.sidebar {
+  @include span-columns(3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow: auto;
+
+  /**
+   * Responsive rules.
+   * First, target mobile devices with a screen width of less
+   * than 55em. This at-breakpoint(cols, width) is shorthand for
+   * 'change the grid to 1 column at less than 55em'. 
+   * For moar check out the susy docs: http://susy.oddbird.net/guides/reference/
+   */
+  @include at-breakpoint(1 55em) {
+    position: relative;
+    @include span-columns(1);
+  }
+
+  /**
+   * Likewise, this is saying 'use 12 columns at widths of greater
+   * than 110em'.
+   */
+  @include at-breakpoint(110em 12) {
+    @include span-columns(2);
+  }
+}
+
+/* Main container */
+.main {
+  @include span-columns(9 omega);
+
+  /* Responsivez */
+  @include at-breakpoint(1 55em) {
+    @include span-columns(1);
+  }
+
+  @include at-breakpoint(110em 12) {
+    @include span-columns(10 omega);
+  }
+}
