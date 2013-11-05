@@ -1,0 +1,13 @@
+/**
+ * Main
+ * 
+ * @author Fred Stevens-Smith
+ * @copyright Cldrdr Inc. d/b/a Rainforest, 2013
+ */
+.main {
+  padding: 6em;
+
+  @include at-breakpoint(1 55em) {
+    padding: 2em 1em;
+  }
+}

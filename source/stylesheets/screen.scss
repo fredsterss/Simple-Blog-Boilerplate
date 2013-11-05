@@ -5,6 +5,9 @@
  * @copyright Cldrdr Inc. d/b/a Rainforest, 2013
  */
 
+$line_width: 36em;
+$font-family: 'Helvetica Neue', Helvetica, sans-serif;
+
 @import "compass";
 @import "compass/reset";
 
@@ -13,3 +16,10 @@
 
 /* Layout */
 @import "shared/layouts/fluid_sidebar";
+
+/* blerg */
+@import "typography";
+@import "sidebar";
+@import "main";
+@import "posts_page";
+@import "post";

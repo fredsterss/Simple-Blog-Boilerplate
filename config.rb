@@ -3,13 +3,25 @@
 ###
 
 # Time.zone = "UTC"
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket                     = 'blog.rainforestqa.com' # The name of the S3 bucket you are targetting. This is globally unique.
+  s3_sync.region                     = 'us-east-1'     # The AWS region for your bucket.
+  s3_sync.aws_access_key_id          = 'AKIAJWNRZBE6PNOYC66Q'
+  s3_sync.aws_secret_access_key      = 'Nk5ITOMAsXBm4+f7thPofw6Byn7FSTObyfcjGfYo'
+  s3_sync.delete                     = false # We delete stray files by default.
+  s3_sync.after_build                = false # We chain after the build step by default. This may not be your desired behavior...
+  s3_sync.prefer_gzip                = true
+  s3_sync.path_style                 = true
+  s3_sync.reduced_redundancy_storage = false
+end
+
 
 activate :blog do |blog|
   # blog.prefix = "blog"
-  # blog.permalink = ":year/:month/:day/:title.html"
-  # blog.sources = ":year-:month-:day-:title.html"
+  blog.permalink = ":year-:month-:day-:title"
+  blog.sources = "posts/:title.html"
   # blog.taglink = "tags/:tag.html"
-  # blog.layout = "layout"
+  blog.layout = "post"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
   # blog.year_link = ":year.html"
@@ -18,8 +30,8 @@ activate :blog do |blog|
   # blog.default_extension = ".markdown"
 
   blog.tag_template = "tag.html"
-  blog.calendar_template = "calendar.html"
-
+  
+  # blog.calendar_template = "calendar.html"
   # blog.paginate = true
   # blog.per_page = 10
   # blog.page_link = "page/:num"
@@ -28,6 +40,8 @@ end
 page "/feed.xml", :layout => false
 
 activate :livereload
+
+activate :directory_indexes
 
 ### 
 # Compass

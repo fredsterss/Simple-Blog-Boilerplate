@@ -1,0 +1,9 @@
+/**
+ * Typography
+ * 
+ * @author Fred Stevens-Smith
+ * @copyright Cldrdr Inc. d/b/a Rainforest, 2013
+ */
+p {
+  @include adjust-font-size-to(18px, 1.3, 16px);
+}
