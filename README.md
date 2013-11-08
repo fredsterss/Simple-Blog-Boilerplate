@@ -20,10 +20,7 @@ Defaults:
 - Compass
 - Susy for grids
 
-## Ghetto install:
-
-
-## Extendible Installation:
+## Installation:
 
 Middleman supports project templates. Project templates are awesome because you can keep all the boilerplate crap in one place on your box. However, the installation process is a little involved. To install middleman-blog-project-template as a template available to your user:
 
