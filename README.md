@@ -2,6 +2,22 @@ This is a Middleman [project template](http://middlemanapp.com/getting-started/#
 
 This is for a blog or blog-like sites (ie. documentation).
 
+## What does it come with?
+Structure:
+- Simple blog
+- Pagination
+- XML feed
+- Tags
+- Simple fluid layout with sidebar
+- Minimal styling to be easily customizeable ([screenshot](http://cl.ly/image/460610072B2y))
+
+Defaults:
+- HAML
+- SCSS
+- Compass
+- Susy for grids
+
+
 ## Installation:
 
 To install middleman-blog-project-template as a template available to your user:
