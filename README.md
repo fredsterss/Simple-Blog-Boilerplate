@@ -2,7 +2,7 @@ This is a Middleman [project template](http://middlemanapp.com/getting-started/#
 
 This is for a blog or blog-like sites (ie. documentation).
 
-![Screenshot](http://cl.ly/image/460610072B2y)
+![Screenshot](http://f.cl.ly/items/1Q0d0b3u3l1W0L3V1r3v/Screen%20Shot%202013-11-08%20at%2012.36.25.png)
 
 ## What does it come with?
 Structure:
