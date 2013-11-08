@@ -1,4 +1,5 @@
-This is for a blog or blog-like sites (ie. documentation). It's intended to have just the right amount of default styling. Most blog boilerplates are either too prescriptive or too unstructured in their layouts. Both extremes make you do unneccessary front-end work to get up and running. This is intended to be a happy medium:
+## Why?
+This is for blogs and blog-like sites (ie. documentation). It's intended to have just the right amount of default styling. Most blog boilerplates are either too prescriptive or too unstructured in their layouts. Both extremes make you do unneccessary front-end work to get up and running. This is intended to be a happy medium:
 
 ![Feed](http://f.cl.ly/items/1Q0d0b3u3l1W0L3V1r3v/Screen%20Shot%202013-11-08%20at%2012.36.25.png)
 ![Post](http://f.cl.ly/items/13042w2p070r2428403Z/Screen%20Shot%202013-11-08%20at%2013.00.07.png)
