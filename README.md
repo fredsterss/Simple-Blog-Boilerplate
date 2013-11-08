@@ -1,8 +1,6 @@
-Uses the awesome [middleman](http://middlemanapp.com/getting-started/).
-
 This is a Middleman [project template](http://middlemanapp.com/getting-started/#toc_6).
 
-This is for a blog or blog-like site (ie. documentation).
+This is for a blog or blog-like sites (ie. documentation).
 
 ## Installation:
 
