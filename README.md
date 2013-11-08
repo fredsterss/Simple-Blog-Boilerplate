@@ -6,13 +6,10 @@ This is for a blog or blog-like site (ie. documentation).
 
 ## Setup:
 
-To use middleman-blog-project-template as a template, clone the Git repository into ```~/.middleman```, like so:
+To use middleman-blog-project-template as a template;
 
-```git clone https://github.com/rainforestapp/middleman-blog-project-template.git ~/.middleman/blog-boilerplate```
-
-then use the new template argument for the ```middleman init``` command:
-
-```middleman init my_new_project --template=blog-boilerplate```
+1. Clone the Git repository into ``~/.middleman``, like so ``git clone https://github.com/rainforestapp/middleman-blog-project-template.git ~/.middleman/blog-boilerplate```
+2. Use the new template argument for the ```middleman init``` command within your project folder: ``middleman init my_new_project --template=blog-boilerplate``
 
 Easy peasy!
 
