@@ -25,9 +25,8 @@ Defaults:
 Middleman supports [project templates](http://middlemanapp.com/getting-started/#toc_6). Project templates are awesome because you can keep all the boilerplate crap in one place on your box. However, the installation process is a little involved. To install middleman-blog-project-template as a template available to your user:
 
 1. Clone the Git repository into ``~/.middleman``, like so ``git clone https://github.com/rainforestapp/Simple-Blog-Boilerplate-for-Middleman.git ~/.middleman/simple-blog-boilerplate``
-2. Create your project folder and ``cd`` into it.
-3. Install Middleman (requires Ruby and Rubygems): ``gem install middleman``
-4. Use the new template argument for the ```middleman init``` command within your project folder: ``middleman init my_new_project --template=simple-blog-boilerplate``
+2. Install Middleman (requires Ruby and Rubygems): ``gem install middleman``
+3. Use the new template argument for the ```middleman init``` command within your projects folder, where 'my_new_project' is the name of your new project folder: ``middleman init my_new_project --template=simple-blog-boilerplate``
 
 ## Usage:
 
