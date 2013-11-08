@@ -2,6 +2,8 @@ This is a Middleman [project template](http://middlemanapp.com/getting-started/#
 
 This is for a blog or blog-like sites (ie. documentation).
 
+![Screenshot](http://cl.ly/image/460610072B2y)
+
 ## What does it come with?
 Structure:
 - Simple blog
