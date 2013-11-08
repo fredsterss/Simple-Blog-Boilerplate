@@ -13,8 +13,8 @@ $font-family: 'Helvetica Neue', Helvetica, sans-serif;
 @import "compass/reset";
 
 /* Globals */
-@import "colours";
 @import "mixins";
+@import "colours";
 
 /* Layout */
 @import "layouts/_responsive_full_width_with_sidebar";

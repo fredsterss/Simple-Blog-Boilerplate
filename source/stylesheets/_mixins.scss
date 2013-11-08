@@ -18,7 +18,7 @@
  * apply with .some-class { @include button(:some-color); }
  * 
  */
-@mixin button ($color: $blue) {
+@mixin button ($color: #0099DC) {
   @include box-sizing('border-box');
   @include border-radius(3px);
   font-weight: bold;
