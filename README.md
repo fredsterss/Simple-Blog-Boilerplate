@@ -7,6 +7,7 @@ This is for a blog or blog-like site (ie. documentation).
 ## Installation:
 
 To install middleman-blog-project-template as a template available to your user:
+
 1. Clone the Git repository into ``~/.middleman``, like so ``git clone https://github.com/rainforestapp/middleman-blog-project-template.git ~/.middleman/blog-boilerplate```
 
 ## Setup: 
