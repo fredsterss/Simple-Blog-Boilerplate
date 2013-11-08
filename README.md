@@ -14,7 +14,7 @@ To install middleman-blog-project-template as a template available to your user:
 
 1. Use the new template argument for the ```middleman init``` command within your project folder: ``middleman init my_new_project --template=blog-boilerplate``
 
-## Usage:
+## Using Middleman:
 
 1. Ensure you have Ruby + bundler installed
 2. Run ``bundle install`` from within your project directory
