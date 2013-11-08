@@ -20,18 +20,19 @@ Defaults:
 - Compass
 - Susy for grids
 
+## Ghetto install:
 
-## Installation:
 
-To install middleman-blog-project-template as a template available to your user:
+## Extendible Installation:
 
-1. Clone the Git repository into ``~/.middleman``, like so ``git clone https://github.com/rainforestapp/middleman-blog-project-template.git ~/.middleman/blog-boilerplate```
+Middleman supports project templates. Project templates are awesome because you can keep all the boilerplate crap in one place on your box. However, the installation process is a little involved. To install middleman-blog-project-template as a template available to your user:
 
-## Setup: 
+1. Install Middleman (requires Ruby and Rubygems): ``gem install middleman``
+2. Clone the Git repository into ``~/.middleman``, like so ``git clone https://github.com/rainforestapp/middleman-blog-project-template.git ~/.middleman/blog-boilerplate```
+3. Create your project folder and ``cd`` into it.
+4. Use the new template argument for the ```middleman init``` command within your project folder: ``middleman init my_new_project --template=blog-boilerplate``
 
-1. Use the new template argument for the ```middleman init``` command within your project folder: ``middleman init my_new_project --template=blog-boilerplate``
-
-## Using Middleman:
+## Usage:
 
 1. Ensure you have Ruby + bundler installed
 2. Run ``bundle install`` from within your project directory
